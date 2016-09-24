@@ -438,14 +438,17 @@ au FileType python let b:delimitMate_nesting_quotes = ['"']
 " }
 
 "for code alignment {
-Bundle 'godlygeek/tabular'
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
-vmap <Leader>a: :Tabularize /:\zs<CR>
+"Bundle 'godlygeek/tabular'
+"nmap <Leader>a= :Tabularize /=<CR>
+"vmap <Leader>a= :Tabularize /=<CR>
+"nmap <Leader>a: :Tabularize /:\zs<CR>
+"vmap <Leader>a: :Tabularize /:\zs<CR>
 " }
 
-Plugin 'plasticboy/vim-markdown'
+"for Markdown preview {
+Plugin 'iamcco/markdown-preview.vim'
+let g:mkdp_path_to_chrome = "C:/Program\ Files\ (x86)/Google/Chrome/Application/chrome.exe"
+" }
 
 "for visual selection {
 "Bundle 'terryma/vim-expand-region'
