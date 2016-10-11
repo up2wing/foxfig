@@ -8,8 +8,9 @@ fox-vim, using vundle to manage plugins
 Windows下设置HOME环境变量，指向vim的安装路径，例如：d:\Program Files\Vim，然后执行install.bat。
 ### 手动安装
 Linux暂不能自动安装。
-使用了vundle管理插件，所以首先要安装[vundle](https://github.com/VundleVim/Vundle.vim)。
-然后执行`:BundleInstall`。
+使用了vundle管理插件，所以首先要安装[vundle](https://github.com/VundleVim/Vundle.vim):
+`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle/`
+然后在vim中执行`:BundleInstall`。
 
 ## 插件的使用
 ### YouCompleteMe
