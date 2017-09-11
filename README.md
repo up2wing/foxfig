@@ -24,7 +24,7 @@
 
 ## Chrome 插件
 ### 1. Pocket
-    一键保存到 [Pocket](http://chromecj.com/productivity/2015-11/618.html)
+    一键保存到 [Pocket](http://chromecj.com/productivity/2015-11/618.html)。
 
 ### 2. 眼睛护航
     [保护好眼睛](http://chromecj.com/accessibility/2014-11/292.html)，可以将背景修改为舒服的配色。
@@ -37,4 +37,7 @@
 
 ### 5. 广告终结者
     [过滤广告](http://www.adtchrome.com/)，支持手动。
+
+### 6. hosts
+    [河蟹](https://laod.cn/hosts/2017-google-hosts.html#button_file)。
 
