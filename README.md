@@ -17,7 +17,7 @@
     用 GTD 来完成[了不起的工作](https://www.appinn.com/pomotodo/)。
 
 ### 6. bing输入法
-    可惜[停更了](download.get.live.cn/components/pinyin/BingPinyinSetup_1.6.302.06_AutoUpgrade.exe)
+    可惜[停更了](http://download.get.live.cn/components/pinyin/BingPinyinSetup_1.6.302.06_AutoUpgrade.exe)
 
 ### 7. Chrome
     一直在用的[浏览器](http://dl.timerim.com/google-chrome-x64.htm)
