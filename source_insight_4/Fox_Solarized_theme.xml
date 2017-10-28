@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceInsightVisualThemes
+	AppVer="4.00.0087"
+	AppVerMinReader="4.00.0030"
+	>
+	<!-- This file contains Source Insight themes for visual settings. -->
+	<!-- www.sourceinsight.com -->
+
+	<ThemeList>
+		<Theme
+			Name="Fox Solarized"
+			>
+			<DisplayColors>
+				<Item Name="DefaultText" Color="#000000" />
+				<Item Name="WindowBackground" Color="#dfdcd2" />
+				<Item Name="SelectionBar" Color="#a99c92" />
+				<Item Name="PrintedDefaultText" Color="#000000" />
+				<Item Name="PrintedWindowBackground" Color="#ffffff" />
+				<Item Name="ChangeMarks" Color="#939300" />
+				<Item Name="SavedChangeMarks" Color="#bdddba" />
+				<Item Name="CurrentLineIndicator" Color="#e6e6e6" />
+				<Item Name="EndofFile" Color="#4e4e4e" />
+				<Item Name="ApplicationBackground" Color="#3c301e" />
+				<Item Name="FrameText" Color="#e4e4dc" />
+				<Item Name="FrameBackground" Color="#685f53" />
+				<DefaultPanelFontAndColor
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</DefaultPanelFontAndColor>
+			</DisplayColors>
+			<DisplayPreferences>
+				<OverviewOptions BackColor="#ffffff" MarkColor="#0080c0" TextColor="#000000" />
+			</DisplayPreferences>
+			<SymbolPane
+				TextColor="#400000"
+				BackColor="#d3cfc0"
+				>
+				<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			</SymbolPane>
+			<ClipWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</ClipWindow>
+			<BookmarkWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</BookmarkWindow>
+			<FTPWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</FTPWindow>
+			<ContextWindow
+				SourceBackColor="#dfdcd2"
+				>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</ContextWindow>
+			<ProjectSymbolWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</ProjectSymbolWindow>
+			<ProjectFileWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</ProjectFileWindow>
+			<ProjectFileTypeWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</ProjectFileTypeWindow>
+			<ProjectSymbolTypeWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</ProjectSymbolTypeWindow>
+			<ProjectFolderWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</ProjectFolderWindow>
+			<FileCompareWindow
+				SourceBackColor="#dfdcd2"
+				>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</FileCompareWindow>
+			<DirectoryCompareWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</DirectoryCompareWindow>
+			<SnippetWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</SnippetWindow>
+			<WindowListWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</WindowListWindow>
+			<RelationWindow>
+				<ListDisplay
+					TextColor="#400000"
+					BackColor="#d3cfc0"
+					>
+					<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
+				</ListDisplay>
+			</RelationWindow>
+			<Styles
+				StyleAppVer="4.00.0087"
+				>
+				<Style Name="Default Text" />
+				<Style
+					Name="Number"
+					FontName="Consolas"
+					FontPitchFamily="1"
+					FontCharset="0"
+					ParentStyle="Ref to Const"
+					/>
+				<Style Name="Operator" TextColor="#00b700" />
+				<Style Name="Delimiter" TextColor="#fbfe81" />
+				<Style Name="Comment" TextColor="#beb7ff" />
+				<Style
+					Name="String"
+					FixedWhiteSpace="0"
+					TextColor="#ffff80"
+					BackColor="#3c3c3c"
+					/>
+				<Style Name="Keyword" TextColor="#008000" />
+				<Style Name="Control" Bold="1" TextColor="#0080c0" />
+				<Style Name="Special" Bold="1" Italic="1" />
+				<Style Name="Boolean" TextColor="#ff6fff" />
+				<Style Name="Debug" TextColor="#ff0000" Italic="1" Underline="Dotted" />
+				<Style
+					Name="Null Value"
+					TextColor="#ff0000"
+					ParentStyle="Ref to Const"
+					/>
+				<Style Name="System" ParentStyle="Reference" />
+				<Style Name="Declaration" Bold="1" TextColor="#00ff00" />
+				<Style
+					Name="Ref To Local"
+					TextColor="#00b3b3"
+					ParentStyle="Reference"
+					/>
+				<Style Name="Reference" TextColor="#00ea00" />
+				<Style Name="Directive" ParentStyle="Control" />
+				<Style
+					Name="Line Number"
+					TextColor="#808080"
+					FontName="Consolas"
+					FontPitchFamily="1"
+					FontCharset="0"
+					/>
+				<Style
+					Name="Highlight"
+					TextColor="#000000"
+					BackColor="#ffff00"
+					Bold="1"
+					/>
+				<Style
+					Name="Symbol Characters"
+					FontName="Microsoft Sans Serif"
+					FontPitchFamily="0"
+					FontCharset="0"
+					ParentStyle="Operator"
+					/>
+				<Style
+					Name="Declare Template Parameter"
+					Underline="Single"
+					ParentStyle="Declaration"
+					/>
+				<Style
+					Name="Ref to Parameter"
+					Bold="1"
+					Underline="Dotted"
+					ParentStyle="Ref To Local"
+					/>
+				<Style Name="Declare Template" ParentStyle="Declare Function" />
+				<Style Name="Declare Package" ParentStyle="Declaration" />
+				<Style Name="Ref to Template" ParentStyle="Reference" />
+				<Style Name="Ref to Package" ParentStyle="Reference" />
+				<Style
+					Name="Ref to Template Parameter"
+					Underline="Single"
+					Bold="1"
+					ParentStyle="Reference"
+					/>
+				<Style Name="Selection" TextColor="#ffffff" BackColor="#509e9e" />
+				<Style Name="Declare Namespace" ParentStyle="Declaration" />
+				<Style Name="Ref to Namespace" ParentStyle="Reference" />
+				<Style Name="Declare Local" ParentStyle="Declaration" />
+				<Style Name="Declare Member" ParentStyle="Declaration" />
+				<Style
+					Name="Declare Method"
+					CharSpacing="10"
+					ParentStyle="Declare Function"
+					/>
+				<Style Name="Declare Method Inline" ParentStyle="Declare Function" />
+				<Style
+					Name="Declare Function"
+					Scale="140"
+					KeepWithNextLine="1"
+					TextColor="#ffffff"
+					ParentStyle="Declaration"
+					/>
+				<Style Name="Declare Macro" ParentStyle="Declaration" />
+				<Style
+					Name="Declare Struct"
+					Scale="140"
+					KeepWithNextLine="1"
+					TextColor="#ffff00"
+					ParentStyle="Declaration"
+					/>
+				<Style Name="Declare Union" ParentStyle="Declare Struct" />
+				<Style Name="Declare Typedef" ParentStyle="Declare Struct" />
+				<Style Name="Declare Class" Scale="120" ParentStyle="Declare Struct" />
+				<Style Name="Declare Var" ParentStyle="Declaration" />
+				<Style Name="Declare Constant" ParentStyle="Declaration" />
+				<Style Name="Declare Enum" ParentStyle="Declare Struct" />
+				<Style Name="Declare Enum Const" ParentStyle="Declaration" />
+				<Style Name="Declare Edit Macro" ParentStyle="Declare Function" />
+				<Style Name="Declare Prototype" ParentStyle="Declare Function" />
+				<Style Name="Preprocessor" ParentStyle="Declaration" />
+				<Style
+					Name="Search Result Heading"
+					Bold="1"
+					Underline="Single"
+					ParentStyle="Declaration"
+					/>
+				<Style
+					Name="Label"
+					TextColor="#ff0000"
+					Scale="110"
+					Underline="Single"
+					ParentStyle="Declaration"
+					/>
+				<Style Name="Declare Interface" ParentStyle="Declare Class" />
+				<Style Name="Declare Resource" ParentStyle="Declaration" />
+				<Style Name="File" ParentStyle="Declaration" />
+				<Style Name="Declare Custom Tag" ParentStyle="Declaration" />
+				<Style Name="Ref to Func" Bold="1" ParentStyle="Reference" />
+				<Style Name="Ref to Macro" ParentStyle="Ref to Func" />
+				<Style Name="Ref to Struct" ParentStyle="Reference" />
+				<Style Name="Ref to Union" ParentStyle="Ref to Struct" />
+				<Style Name="Ref to Typedef" ParentStyle="Ref to Struct" />
+				<Style
+					Name="Ref to Global Var"
+					Bold="1"
+					Italic="1"
+					TextColor="#ff48ff"
+					ParentStyle="Reference"
+					/>
+				<Style
+					Name="Ref to Const"
+					TextColor="#ff4646"
+					ParentStyle="Reference"
+					/>
+				<Style Name="Ref to Enum" ParentStyle="Reference" />
+				<Style Name="Ref to Custom" ParentStyle="Reference" />
+				<Style Name="Ref to EdMacro" ParentStyle="Reference" />
+				<Style Name="Ref to Class" ParentStyle="Ref to Struct" />
+				<Style Name="Ref to Method" Italic="1" ParentStyle="Ref to Func" />
+				<Style Name="Ref to EnumConst" ParentStyle="Ref to Const" />
+				<Style Name="Ref to Proto" ParentStyle="Ref to Func" />
+				<Style Name="Ref to Preproc" ParentStyle="Reference" />
+				<Style Name="Ref to Search" ParentStyle="Reference" />
+				<Style Name="Ref to Label" ParentStyle="Reference" />
+				<Style Name="Ref to Member" Italic="1" ParentStyle="Reference" />
+				<Style Name="Ref to Interface" ParentStyle="Ref to Class" />
+				<Style Name="Ref to Resource" ParentStyle="Reference" />
+				<Style Name="Ref to File" ParentStyle="Reference" />
+				<Style
+					Name="Comment Heading 1"
+					Bold="1"
+					Scale="150"
+					Underline="Thick"
+					FontName="Arial"
+					FontPitchFamily="2"
+					FontCharset="0"
+					ParentStyle="Comment"
+					/>
+				<Style
+					Name="Comment Heading 2"
+					Bold="1"
+					Scale="130"
+					Underline="Single"
+					FontName="Arial"
+					FontPitchFamily="2"
+					FontCharset="0"
+					ParentStyle="Comment"
+					/>
+				<Style
+					Name="Comment Heading 3"
+					Bold="1"
+					Scale="120"
+					FontName="Arial"
+					FontPitchFamily="2"
+					FontCharset="0"
+					ParentStyle="Comment"
+					/>
+				<Style
+					Name="Comment Heading 4"
+					Bold="1"
+					FontName="Arial"
+					FontPitchFamily="2"
+					FontCharset="0"
+					ParentStyle="Comment"
+					/>
+				<Style Name="Comment Right" Italic="1" ParentStyle="Comment" />
+				<Style Name="Ref to Base Class" ParentStyle="Reference" />
+				<Style Name="Ref to Inline Type" ParentStyle="Reference" />
+				<Style Name="Inactive Code" TextColor="#808080" />
+				<Style
+					Name="Declare Parameter"
+					Underline="Single"
+					ParentStyle="Declaration"
+					/>
+				<Style
+					Name="Auto Annotations"
+					Scale="90"
+					TextColor="#808080"
+					ParentStyle="Comment"
+					/>
+				<Style Name="HTML or XML Element" />
+				<Style
+					Name="HTML Title"
+					TextColor="#ff0000"
+					Bold="1"
+					Scale="130"
+					Underline="Single"
+					/>
+				<Style Name="Perl POD" />
+				<Style Name="Perl End Script" />
+				<Style Name="Declare Method Prototype" ParentStyle="Declare Method" />
+				<Style Name="Ref to Method Prototype" ParentStyle="Ref to Method" />
+				<Style
+					Name="Comment To Do"
+					Scale="120"
+					Bold="1"
+					TextColor="#000000"
+					BackColor="#ffff00"
+					FontName="Arial"
+					FontPitchFamily="2"
+					FontCharset="0"
+					ParentStyle="Comment"
+					/>
+				<Style Name="Ref to IDL Module" ParentStyle="Reference" />
+				<Style Name="Ref to IDL Library" ParentStyle="Reference" />
+				<Style
+					Name="Declare IDL Module"
+					Scale="150"
+					ShadowColor="#c0c0c0"
+					KeepWithNextLine="1"
+					ParentStyle="Declaration"
+					/>
+				<Style
+					Name="Declare IDL Library"
+					Scale="150"
+					ShadowColor="#c0c0c0"
+					KeepWithNextLine="1"
+					ParentStyle="Declaration"
+					/>
+				<Style Name="Comment Single Line" ParentStyle="Comment" />
+				<Style Name="Comment Multi Line" ParentStyle="Comment" />
+				<Style Name="Parentheses" ParentStyle="Delimiter" />
+				<Style Name="HTML Body Text" FixedWhiteSpace="0" />
+				<Style Name="HTML Tag" Bold="1" TextColor="#00ffff" />
+				<Style Name="Standard Property" ParentStyle="Ref to Member" />
+				<Style Name="Standard Function" ParentStyle="Ref to Func" />
+				<Style Name="Standard Object" ParentStyle="Ref to Class" />
+				<Style
+					Name="Declare CSS Selector"
+					Scale="120"
+					ParentStyle="Declaration"
+					/>
+				<Style Name="Declare C# Property" ParentStyle="Declaration" />
+				<Style Name="Ref to C# Property" ParentStyle="Reference" />
+				<Style
+					Name="Mono Font View"
+					FontName="Consolas"
+					FontPitchFamily="1"
+					FontCharset="0"
+					/>
+				<Style Name="Declare C# Event" ParentStyle="Declaration" />
+				<Style Name="Declare C# Indexer" ParentStyle="Declaration" />
+				<Style Name="Ref to C# Event" ParentStyle="Reference" />
+				<Style Name="Ref to C# Indexer" ParentStyle="Reference" />
+				<Style Name="Ref to Alias" ParentStyle="Reference" />
+				<Style Name="Declare Alias" ParentStyle="Declaration" />
+				<Style Name="CDATA Section" TextColor="#808080" />
+				<Style
+					Name="Declare Type Parameter"
+					Underline="Single"
+					ParentStyle="Declaration"
+					/>
+				<Style
+					Name="Ref to Type Parameter"
+					Underline="Single"
+					Bold="1"
+					ParentStyle="Reference"
+					/>
+				<Style
+					Name="Snippet Input Field"
+					TextColor="#000000"
+					BackColor="#a0e1ff"
+					Bold="1"
+					/>
+				<Style Name="Register" TextColor="#008000" Bold="1" />
+				<Style
+					Name="Python Doc String"
+					Italic="1"
+					FixedWhiteSpace="0"
+					ParentStyle="Comment"
+					/>
+				<Style Name="Instruction" ParentStyle="Control" />
+				<Style
+					Name="Reference Highlight"
+					TextColor="#000000"
+					BackColor="#0080c0"
+					/>
+				<Style Name="Declare VHDL Entity" ParentStyle="Declaration" />
+				<Style Name="Declare VHDL Architecture" ParentStyle="Declaration" />
+				<Style Name="Declare VHDL Component" ParentStyle="Declaration" />
+				<Style Name="Declare VHDL Process" ParentStyle="Declaration" />
+				<Style Name="Declare VHDL Config" ParentStyle="Declaration" />
+				<Style Name="Ref to VHDL Entity" ParentStyle="Reference" />
+				<Style Name="Ref to VHDL Architecture" ParentStyle="Reference" />
+				<Style Name="Ref to VHDL Component" ParentStyle="Reference" />
+				<Style Name="Ref to VHDL Process" ParentStyle="Reference" />
+				<Style Name="Ref to VHDL Config" ParentStyle="Reference" />
+				<Style Name="HTML Tag Excerpt" />
+				<Style Name="new comment" />
+			</Styles>
+		</Theme>
+	</ThemeList>
+</SourceInsightVisualThemes>
