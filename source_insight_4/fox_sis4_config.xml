@@ -167,7 +167,7 @@
 		ScaleNestedParens="1"
 		/>
 	<DisplayColors>
-		<Item Name="DefaultText" Color="#93a1a1" />
+		<Item Name="DefaultText" Color="#f0f0f0" />
 		<Item Name="WindowBackground" Color="#073642" />
 		<Item Name="SelectionBar" Color="#a99c92" />
 		<Item Name="PrintedDefaultText" Color="#000000" />
@@ -970,8 +970,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Custom Command Output"
@@ -1005,8 +1010,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Search Results"
@@ -1040,8 +1050,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="C Source File"
@@ -1075,8 +1090,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="C/C++ Source File"
@@ -1088,7 +1108,7 @@
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
 			AddToProject="1"
-			EmulateScreenFontsForPrinting="1"
+			EmulateScreenFontsForPrinting="0"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
 			VisibleSpaces="0"
@@ -1110,8 +1130,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="C# Source File"
@@ -1145,8 +1170,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Objective-C File"
@@ -1180,8 +1210,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Python File"
@@ -1215,8 +1250,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Interface Definition File"
@@ -1250,8 +1290,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="x86 Asm Source File"
@@ -1285,8 +1330,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Java Source File"
@@ -1320,8 +1370,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="JavaScript File"
@@ -1355,8 +1410,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Perl Source File"
@@ -1390,8 +1450,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="PHP File"
@@ -1425,8 +1490,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Active Server Page"
@@ -1460,8 +1530,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Visual Basic Source File"
@@ -1495,8 +1570,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Batch File"
@@ -1530,8 +1610,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="INI File"
@@ -1565,8 +1650,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Link Def File"
@@ -1600,8 +1690,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Make File"
@@ -1635,8 +1730,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="JSON File"
@@ -1670,8 +1770,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Resource File"
@@ -1705,8 +1810,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Source Insight Macro File"
@@ -1740,8 +1850,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Plain Text"
@@ -1775,8 +1890,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="HTML File"
@@ -1810,8 +1930,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Cascading Style Sheet"
@@ -1845,8 +1970,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Output File"
@@ -1880,8 +2010,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="Token Macro File"
@@ -1915,8 +2050,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="XML File"
@@ -1950,8 +2090,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="VHDL File"
@@ -1985,8 +2130,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 		<Type
 			Name="SI Tags File"
@@ -2020,8 +2170,13 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
-			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<ScreenFont
+				name="Bitstream Vera Sans Mono"
+				psize="10"
+				fpfamily="49"
+				charset="0"
+				/>
+			<PrinterFont name="Verdana" psize="8" fpfamily="34" charset="0" />
 		</Type>
 	</FileTypes>
 	<Styles
@@ -2035,7 +2190,7 @@
 			FontCharset="0"
 			ParentStyle="Ref to Const"
 			/>
-		<Style Name="Operator" TextColor="#00b700" />
+		<Style Name="Operator" TextColor="#f0f0f0" />
 		<Style Name="Delimiter" TextColor="#fbfe81" />
 		<Style Name="Comment" TextColor="#beb7ff" />
 		<Style
@@ -2044,8 +2199,8 @@
 			TextColor="#ffff80"
 			BackColor="#3c3c3c"
 			/>
-		<Style Name="Keyword" TextColor="#b58900" />
-		<Style Name="Control" Bold="1" TextColor="#859900" />
+		<Style Name="Keyword" TextColor="#00c600" />
+		<Style Name="Control" Bold="1" TextColor="#f0f0f0" />
 		<Style Name="Special" Bold="1" Italic="1" />
 		<Style Name="Boolean" TextColor="#ff6fff" />
 		<Style Name="Debug" TextColor="#ff0000" Italic="1" Underline="Dotted" />
@@ -2058,8 +2213,8 @@
 		<Style Name="Declaration" Bold="1" TextColor="#00ff00" />
 		<Style
 			Name="Ref To Local"
-			TextColor="#00b3b3"
 			ParentStyle="Reference"
+			TextColor="#2f91dc"
 			/>
 		<Style Name="Reference" TextColor="#00ea00" />
 		<Style Name="Directive" ParentStyle="Control" />
@@ -2093,7 +2248,7 @@
 			ParentStyle="Ref To Local"
 			Bold="1"
 			Underline="Dotted"
-			TextColor="#2aa198"
+			TextColor="#268bd2"
 			/>
 		<Style Name="Declare Template" ParentStyle="Declare Function" />
 		<Style Name="Declare Package" ParentStyle="Declaration" />
@@ -2111,7 +2266,7 @@
 		<Style
 			Name="Declare Local"
 			ParentStyle="Declaration"
-			TextColor="#839496"
+			TextColor="#268bd2"
 			/>
 		<Style Name="Declare Member" ParentStyle="Declaration" />
 		<Style
@@ -2124,22 +2279,35 @@
 			Name="Declare Function"
 			ParentStyle="Declaration"
 			Scale="140"
+			Bold="1"
 			KeepWithNextLine="1"
 			TextColor="#268bd2"
 			/>
-		<Style Name="Declare Macro" ParentStyle="Declaration" />
+		<Style
+			Name="Declare Macro"
+			ParentStyle="Declaration"
+			TextColor="#2f91d9"
+			/>
 		<Style
 			Name="Declare Struct"
+			ParentStyle="Declaration"
 			Scale="140"
 			KeepWithNextLine="1"
-			TextColor="#ffff00"
-			ParentStyle="Declaration"
+			TextColor="#268bd2"
 			/>
 		<Style Name="Declare Union" ParentStyle="Declare Struct" />
 		<Style Name="Declare Typedef" ParentStyle="Declare Struct" />
 		<Style Name="Declare Class" Scale="120" ParentStyle="Declare Struct" />
-		<Style Name="Declare Var" ParentStyle="Declaration" />
-		<Style Name="Declare Constant" ParentStyle="Declaration" />
+		<Style
+			Name="Declare Var"
+			ParentStyle="Declaration"
+			TextColor="#268bd2"
+			/>
+		<Style
+			Name="Declare Constant"
+			ParentStyle="Declaration"
+			TextColor="#2f91dc"
+			/>
 		<Style Name="Declare Enum" ParentStyle="Declare Struct" />
 		<Style Name="Declare Enum Const" ParentStyle="Declaration" />
 		<Style Name="Declare Edit Macro" ParentStyle="Declare Function" />
@@ -2166,20 +2334,24 @@
 			Name="Ref to Func"
 			ParentStyle="Reference"
 			Bold="1"
-			TextColor="#839496"
+			TextColor="#f0f0f0"
 			/>
 		<Style
 			Name="Ref to Macro"
 			ParentStyle="Ref to Func"
-			TextColor="#93a1a1"
+			TextColor="#e7581b"
 			/>
 		<Style
 			Name="Ref to Struct"
 			ParentStyle="Reference"
-			TextColor="#93a1a1"
+			TextColor="#f0f0f0"
 			/>
 		<Style Name="Ref to Union" ParentStyle="Ref to Struct" />
-		<Style Name="Ref to Typedef" ParentStyle="Ref to Struct" />
+		<Style
+			Name="Ref to Typedef"
+			ParentStyle="Ref to Struct"
+			TextColor="#f0f0f0"
+			/>
 		<Style
 			Name="Ref to Global Var"
 			Bold="1"
@@ -2192,7 +2364,11 @@
 			ParentStyle="Reference"
 			TextColor="#dc322f"
 			/>
-		<Style Name="Ref to Enum" ParentStyle="Reference" />
+		<Style
+			Name="Ref to Enum"
+			ParentStyle="Reference"
+			TextColor="#ffffff"
+			/>
 		<Style Name="Ref to Custom" ParentStyle="Reference" />
 		<Style Name="Ref to EdMacro" ParentStyle="Reference" />
 		<Style Name="Ref to Class" ParentStyle="Ref to Struct" />
@@ -2201,7 +2377,7 @@
 		<Style
 			Name="Ref to Proto"
 			ParentStyle="Ref to Func"
-			TextColor="#839496"
+			TextColor="#f0f0f0"
 			/>
 		<Style Name="Ref to Preproc" ParentStyle="Reference" />
 		<Style Name="Ref to Search" ParentStyle="Reference" />
@@ -2210,7 +2386,7 @@
 			Name="Ref to Member"
 			ParentStyle="Reference"
 			Italic="1"
-			TextColor="#93a1a1"
+			TextColor="#f0f0f0"
 			/>
 		<Style Name="Ref to Interface" ParentStyle="Ref to Class" />
 		<Style Name="Ref to Resource" ParentStyle="Reference" />
@@ -2260,7 +2436,7 @@
 			Name="Declare Parameter"
 			ParentStyle="Declaration"
 			Underline="Single"
-			TextColor="#cb4b16"
+			TextColor="#268bd2"
 			/>
 		<Style
 			Name="Auto Annotations"
@@ -2308,11 +2484,19 @@
 			ParentStyle="Declaration"
 			/>
 		<Style Name="Comment Single Line" ParentStyle="Comment" />
-		<Style Name="Comment Multi Line" ParentStyle="Comment" />
+		<Style
+			Name="Comment Multi Line"
+			ParentStyle="Comment"
+			TextColor="#839496"
+			/>
 		<Style Name="Parentheses" ParentStyle="Delimiter" />
 		<Style Name="HTML Body Text" FixedWhiteSpace="0" />
 		<Style Name="HTML Tag" Bold="1" TextColor="#00ffff" />
-		<Style Name="Standard Property" ParentStyle="Ref to Member" />
+		<Style
+			Name="Standard Property"
+			ParentStyle="Ref to Member"
+			TextColor="#93a1a1"
+			/>
 		<Style Name="Standard Function" ParentStyle="Ref to Func" />
 		<Style Name="Standard Object" ParentStyle="Ref to Class" />
 		<Style
@@ -7763,7 +7947,7 @@
 		<SymbolTypes All="1" />
 	</ProjectReport>
 	<SymbolPane
-		Width="242"
+		Width="154"
 		TextColor="#400000"
 		BackColor="#d3cfc0"
 		ShowChanges="1"
