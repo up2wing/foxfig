@@ -99,8 +99,8 @@
 			TextColor="#000000"
 			/>
 		<DefaultPanelFontAndColor
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</DefaultPanelFontAndColor>
@@ -7948,8 +7948,8 @@
 	</ProjectReport>
 	<SymbolPane
 		Width="154"
-		TextColor="#400000"
-		BackColor="#d3cfc0"
+		TextColor="#e0e0e0"
+		BackColor="#073642"
 		ShowChanges="1"
 		ShowLongFunctions="1"
 		>
@@ -8217,8 +8217,8 @@
 			ConfirmDelete="0"
 			/>
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8236,8 +8236,8 @@
 			SortBy="Name"
 			>
 			<ListDisplay
-				TextColor="#400000"
-				BackColor="#d3cfc0"
+				TextColor="#e0e0e0"
+				BackColor="#073642"
 				>
 				<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 			</ListDisplay>
@@ -8252,8 +8252,8 @@
 		ExpandSnippetVars="1"
 		>
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8269,8 +8269,8 @@
 		BackColor="#073642"
 		>
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8287,8 +8287,8 @@
 		FileCompareMethod="CompareSizeAndDate"
 		>
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8308,8 +8308,8 @@
 		AllowEdits="0"
 		>
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8324,8 +8324,8 @@
 		SortColumn="0"
 		>
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8339,8 +8339,8 @@
 		>
 		<Sort SortType="6" Invert="0" />
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8353,8 +8353,8 @@
 		SplitPercent="50"
 		>
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8425,8 +8425,8 @@
 		</SymbolTypes>
 		<Sort SortType="6" Invert="0" />
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8497,8 +8497,8 @@
 		</SymbolTypes>
 		<Sort SortType="6" Invert="0" />
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8509,8 +8509,8 @@
 		ShowSymbol="1"
 		>
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
@@ -8520,8 +8520,8 @@
 			IsVisible="0"
 			>
 			<ListOptions
-				TextColor="#400000"
-				BackColor="#d3cfc0"
+				TextColor="#e0e0e0"
+				BackColor="#073642"
 				>
 				<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 			</ListOptions>
@@ -8603,8 +8603,8 @@
 			<item wildcard="*.xml" />
 		</AsciiModeFiles>
 		<ListDisplay
-			TextColor="#400000"
-			BackColor="#d3cfc0"
+			TextColor="#e0e0e0"
+			BackColor="#073642"
 			>
 			<Font name="Segoe UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
