@@ -40,4 +40,6 @@
 
 ### 6. hosts
     [河蟹](https://laod.cn/hosts/2017-google-hosts.html#button_file)。
-
+    
+### 7. Markdown here
+    可以[在印象笔记中Markdown书写笔记](https://www.gugeapps.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa)。
