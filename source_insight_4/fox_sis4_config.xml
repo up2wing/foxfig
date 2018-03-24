@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SourceInsightConfiguration
-	AppVer="4.00.0087"
+	AppVer="4.00.0093"
 	AppVerMinReader="4.00.0032"
 	>
 	<!-- This is a Source Insight configuration file. -->
@@ -18,7 +18,7 @@
 		EnableEvents="0"
 		WinHelpPath=""
 		HTMLHelpPath=""
-		CheckForUpdates="1"
+		CheckForUpdates="0"
 		/>
 	<DisplayPreferences>
 		<GeneralDisplayOptions
@@ -423,6 +423,7 @@
 	</Menus>
 	<Keymaps>
 		<Main>
+			<item Command="Activate Project Symbol List" Keycode="(A)D" />
 			<item Command="Load Layout A" Keycode="(CS)F1" />
 			<item Command="Load Layout B" Keycode="(CS)F2" />
 			<item Command="Load Layout C" Keycode="(CS)F3" />
@@ -619,16 +620,15 @@
 			<item Command="Tab" Keycode="Tab" />
 			<item Command="Back Tab" Keycode="(S)Tab" />
 			<item Command="Simple Tab" Keycode="(CA)Tab" />
-			<item Command="Browse Project Symbols..." Keycode="(A)D" />
 			<item Command="Jump To Caller" Keycode="(A)S" />
 			<item Command="Lookup References..." Keycode="(A)F" />
 			<item Command="Highlight Word" Keycode="(A)E" />
 			<item Command="Refresh Relation Window" Keycode="(A)W" />
-			<item Command="Browse Local File Symbols..." Keycode="(A)A" />
 			<item Command="Jump To Definition" Keycode="(A)G" />
 			<item Command="Go Back" Keycode="(A)C" />
 			<item Command="Go Forward" Keycode="(A)V" />
 			<item Command="Open..." Keycode="(C)O" />
+			<item Command="Activate Symbol Window" Keycode="(A)A" />
 		</Main>
 	</Keymaps>
 	<CustomCommands>
@@ -1123,7 +1123,7 @@
 			ShowRefHighlights="1"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="0"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="2"
@@ -2180,7 +2180,7 @@
 		</Type>
 	</FileTypes>
 	<Styles
-		StyleAppVer="4.00.0087"
+		StyleAppVer="4.00.0093"
 		>
 		<Style Name="Default Text" />
 		<Style
@@ -2213,8 +2213,8 @@
 		<Style Name="Declaration" Bold="1" TextColor="#00ff00" />
 		<Style
 			Name="Ref To Local"
-			ParentStyle="Reference"
 			TextColor="#2f91dc"
+			ParentStyle="Reference"
 			/>
 		<Style Name="Reference" TextColor="#00ea00" />
 		<Style Name="Directive" ParentStyle="Control" />
@@ -2227,9 +2227,9 @@
 			/>
 		<Style
 			Name="Highlight"
-			TextColor="#000000"
-			BackColor="#ffff00"
 			Bold="1"
+			TextColor="#000000"
+			BackColor="#859900"
 			/>
 		<Style
 			Name="Symbol Characters"
@@ -2245,10 +2245,10 @@
 			/>
 		<Style
 			Name="Ref to Parameter"
-			ParentStyle="Ref To Local"
 			Bold="1"
 			Underline="Dotted"
 			TextColor="#268bd2"
+			ParentStyle="Ref To Local"
 			/>
 		<Style Name="Declare Template" ParentStyle="Declare Function" />
 		<Style Name="Declare Package" ParentStyle="Declaration" />
@@ -2265,8 +2265,8 @@
 		<Style Name="Ref to Namespace" ParentStyle="Reference" />
 		<Style
 			Name="Declare Local"
-			ParentStyle="Declaration"
 			TextColor="#268bd2"
+			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Member" ParentStyle="Declaration" />
 		<Style
@@ -2277,36 +2277,36 @@
 		<Style Name="Declare Method Inline" ParentStyle="Declare Function" />
 		<Style
 			Name="Declare Function"
-			ParentStyle="Declaration"
 			Scale="140"
 			Bold="1"
 			KeepWithNextLine="1"
 			TextColor="#268bd2"
+			ParentStyle="Declaration"
 			/>
 		<Style
 			Name="Declare Macro"
-			ParentStyle="Declaration"
 			TextColor="#2f91d9"
+			ParentStyle="Declaration"
 			/>
 		<Style
 			Name="Declare Struct"
-			ParentStyle="Declaration"
 			Scale="140"
 			KeepWithNextLine="1"
 			TextColor="#268bd2"
+			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Union" ParentStyle="Declare Struct" />
 		<Style Name="Declare Typedef" ParentStyle="Declare Struct" />
 		<Style Name="Declare Class" Scale="120" ParentStyle="Declare Struct" />
 		<Style
 			Name="Declare Var"
-			ParentStyle="Declaration"
 			TextColor="#268bd2"
+			ParentStyle="Declaration"
 			/>
 		<Style
 			Name="Declare Constant"
-			ParentStyle="Declaration"
 			TextColor="#2f91dc"
+			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Enum" ParentStyle="Declare Struct" />
 		<Style Name="Declare Enum Const" ParentStyle="Declaration" />
@@ -2332,25 +2332,25 @@
 		<Style Name="Declare Custom Tag" ParentStyle="Declaration" />
 		<Style
 			Name="Ref to Func"
-			ParentStyle="Reference"
 			Bold="1"
 			TextColor="#f0f0f0"
+			ParentStyle="Reference"
 			/>
 		<Style
 			Name="Ref to Macro"
-			ParentStyle="Ref to Func"
 			TextColor="#e7581b"
+			ParentStyle="Ref to Func"
 			/>
 		<Style
 			Name="Ref to Struct"
-			ParentStyle="Reference"
 			TextColor="#f0f0f0"
+			ParentStyle="Reference"
 			/>
 		<Style Name="Ref to Union" ParentStyle="Ref to Struct" />
 		<Style
 			Name="Ref to Typedef"
-			ParentStyle="Ref to Struct"
 			TextColor="#f0f0f0"
+			ParentStyle="Ref to Struct"
 			/>
 		<Style
 			Name="Ref to Global Var"
@@ -2361,13 +2361,13 @@
 			/>
 		<Style
 			Name="Ref to Const"
-			ParentStyle="Reference"
 			TextColor="#dc322f"
+			ParentStyle="Reference"
 			/>
 		<Style
 			Name="Ref to Enum"
-			ParentStyle="Reference"
 			TextColor="#ffffff"
+			ParentStyle="Reference"
 			/>
 		<Style Name="Ref to Custom" ParentStyle="Reference" />
 		<Style Name="Ref to EdMacro" ParentStyle="Reference" />
@@ -2376,17 +2376,17 @@
 		<Style Name="Ref to EnumConst" ParentStyle="Ref to Const" />
 		<Style
 			Name="Ref to Proto"
-			ParentStyle="Ref to Func"
 			TextColor="#f0f0f0"
+			ParentStyle="Ref to Func"
 			/>
 		<Style Name="Ref to Preproc" ParentStyle="Reference" />
 		<Style Name="Ref to Search" ParentStyle="Reference" />
 		<Style Name="Ref to Label" ParentStyle="Reference" />
 		<Style
 			Name="Ref to Member"
-			ParentStyle="Reference"
 			Italic="1"
 			TextColor="#f0f0f0"
+			ParentStyle="Reference"
 			/>
 		<Style Name="Ref to Interface" ParentStyle="Ref to Class" />
 		<Style Name="Ref to Resource" ParentStyle="Reference" />
@@ -2434,9 +2434,9 @@
 		<Style Name="Inactive Code" TextColor="#808080" />
 		<Style
 			Name="Declare Parameter"
-			ParentStyle="Declaration"
 			Underline="Single"
 			TextColor="#268bd2"
+			ParentStyle="Declaration"
 			/>
 		<Style
 			Name="Auto Annotations"
@@ -2486,16 +2486,16 @@
 		<Style Name="Comment Single Line" ParentStyle="Comment" />
 		<Style
 			Name="Comment Multi Line"
-			ParentStyle="Comment"
 			TextColor="#839496"
+			ParentStyle="Comment"
 			/>
 		<Style Name="Parentheses" ParentStyle="Delimiter" />
 		<Style Name="HTML Body Text" FixedWhiteSpace="0" />
 		<Style Name="HTML Tag" Bold="1" TextColor="#00ffff" />
 		<Style
 			Name="Standard Property"
-			ParentStyle="Ref to Member"
 			TextColor="#93a1a1"
+			ParentStyle="Ref to Member"
 			/>
 		<Style Name="Standard Function" ParentStyle="Ref to Func" />
 		<Style Name="Standard Object" ParentStyle="Ref to Class" />
@@ -2744,6 +2744,10 @@
 				<Item Keyword="wchar_t" Style="Keyword" />
 				<Item Keyword="while" Style="Control" />
 				<Item Keyword="WORD" Style="Keyword" />
+				<Item Keyword="int8_t" Style="Keyword" />
+				<Item Keyword="int16_t" Style="Keyword" />
+				<Item Keyword="int32_t" Style="Keyword" />
+				<Item Keyword="int64_t" Style="Keyword" />
 			</Keywords>
 		</Language>
 		<Language
@@ -4478,6 +4482,10 @@
 				<Item Keyword="wchar_t" Style="Keyword" />
 				<Item Keyword="while" Style="Control" />
 				<Item Keyword="WORD" Style="Keyword" />
+				<Item Keyword="int8_t" Style="Keyword" />
+				<Item Keyword="int16_t" Style="Keyword" />
+				<Item Keyword="int32_t" Style="Keyword" />
+				<Item Keyword="int64_t" Style="Keyword" />
 			</Keywords>
 		</Language>
 		<Language
@@ -7712,6 +7720,7 @@
 			ParseCOMMacros="1"
 			IgnoreNamespaces="0"
 			IgnoreJavaPackages="1"
+			SupportMicrochipC="0"
 			DefaultHTMLScriptLanguage="JavaScript"
 			/>
 	</ParsingOptions>
@@ -8360,7 +8369,7 @@
 		</ListDisplay>
 	</ProjectFolderWindow>
 	<ProjectSymbolWindow
-		ShowMetrics="1"
+		ShowMetrics="0"
 		ShowFile="1"
 		Metric="Lines of Code"
 		>
