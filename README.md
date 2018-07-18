@@ -3,7 +3,7 @@
 ## 常用软件
 ### 1. TotalCommander
     配合 Hoekey 和 VimDesktop 使用，实现 Windows 下资源管理器。
-    
+
 ### 2. Everything
     Windows 下[搜索文件立得](https://www.voidtools.com/zh-cn/)。
 
@@ -12,7 +12,7 @@
 
 ### 4. Hoekey
     任何操作都可以[键盘呼出](https://www.appinn.com/hoekey-one/)，配置文件在[这里]()。
-    
+
 ### 5. 番茄土豆
     用 GTD 来完成[了不起的工作](https://www.appinn.com/pomotodo/)。
 
@@ -40,6 +40,6 @@
 
 ### 6. hosts
     [河蟹](https://laod.cn/hosts/2017-google-hosts.html#button_file)。
-    
+
 ### 7. Markdown here
     可以[在印象笔记中Markdown书写笔记](https://www.gugeapps.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa)。
