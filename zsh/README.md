@@ -7,9 +7,8 @@
 
 `chsh -s /bin/zsh`
 ### 2. 安装oh-my-zsh
-`git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh`
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-`cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 ### 3. 安装autojump
 `git clone https://github.com/joelthelion/autojump.git`
 
