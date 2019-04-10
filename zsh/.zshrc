@@ -97,3 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias v="virsh"
+alias vl="virsh list"
+alias vs="virsh shutdown"
+alias vd="virsh destroy"
+alias tmux="tmux -2"
