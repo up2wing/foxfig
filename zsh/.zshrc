@@ -62,7 +62,7 @@ ZSH_THEME="afowler"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx ruby autojump)
+plugins=(osx autojump)
 
 [[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
@@ -101,4 +101,11 @@ alias v="virsh"
 alias vl="virsh list"
 alias vs="virsh shutdown"
 alias vd="virsh destroy"
+alias g="git"
 alias tmux="tmux -2"
+
+ga() {
+    echo $1
+    pid=`ps aux |grep $1 |grep -v grep|awk '{print $2}'`
+    gdb attach $pid
+}
