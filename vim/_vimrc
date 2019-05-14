@@ -540,6 +540,7 @@ map <silent> <F7> :SessionList<cr>
 " nerd commenter {
 Bundle 'scrooloose/nerdcommenter'
 let NERDShutUp=1
+let g:NERDSpaceDelims=1
 " }
 
 " cscope {
