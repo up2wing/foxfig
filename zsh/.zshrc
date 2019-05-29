@@ -103,6 +103,8 @@ alias vs="virsh shutdown"
 alias vd="virsh destroy"
 alias g="git"
 alias tmux="tmux -2"
+alias tnew="tmux -2 new -s"
+alias tatt="tmux -2 attach -t"
 
 ga() {
     echo $1
