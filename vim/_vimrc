@@ -288,32 +288,32 @@ endfunction
 
 " file search ctrlp {
 Bundle 'kien/ctrlp.vim'
-    let g:ctrlp_map = '<leader>p'
-    let g:ctrlp_cmd = 'CtrlP'
-    "在历史文件中模糊查找
-    map <leader>f :CtrlPMRU<CR>
-    set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/arch\/arc,*/arch\/arm,*/arch/alpha,*/arch/arm64,*/arch/c6x,*/arch/csky,*/arch/h8300,*/arch/hexagon,*/arch/m68k,*/arch/microblaze,*/arch/nds32,*/arch/nios2,*/arch/openrisc,*/arch/parisc,*/arch/riscv,*/arch/s390,*/arch/sh,*/arch/sparc,*/arch/um,*/arch/unicore32,*/arch/mips,*/arch/powerpc,BUILD/    " MacOSX/Linux"
-    let g:ctrlp_custom_ignore = {
-        \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
-        \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz)$',
-        \ }
-    "\ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
-    let g:ctrlp_working_path_mode='rw'  "设置工作目录为最近的包括.git, .svn目录的目录
-    let g:ctrlp_root_markers=['.git']   "在项目根目录中建立一个.git的空目录，ctrlp即从根目录开始搜索
-    let g:ctrlp_match_window_bottom=1
-    let g:ctrlp_max_height=20
-    let g:ctrlp_match_window_reversed=0
-    let g:ctrlp_mruf_max=50000
-    let g:ctrlp_follow_symlinks=1
-    let g:ctrlp_regexp=1
-    let g:ctrlp_max_files=0     "项目中文件较多时可以搜索到所有文件
-    let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
+"     let g:ctrlp_map = '<leader>p'
+"     let g:ctrlp_cmd = 'CtrlP'
+"     "在历史文件中模糊查找
+"     map <leader>f :CtrlPMRU<CR>
+"     set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/arch\/arc,*/arch\/arm,*/arch/alpha,*/arch/arm64,*/arch/c6x,*/arch/csky,*/arch/h8300,*/arch/hexagon,*/arch/m68k,*/arch/microblaze,*/arch/nds32,*/arch/nios2,*/arch/openrisc,*/arch/parisc,*/arch/riscv,*/arch/s390,*/arch/sh,*/arch/sparc,*/arch/um,*/arch/unicore32,*/arch/mips,*/arch/powerpc,BUILD/    " MacOSX/Linux"
+"     let g:ctrlp_custom_ignore = {
+"         \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
+"         \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz)$',
+"         \ }
+"     "\ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+"     let g:ctrlp_working_path_mode='rw'  "设置工作目录为最近的包括.git, .svn目录的目录
+"     let g:ctrlp_root_markers=['.git']   "在项目根目录中建立一个.git的空目录，ctrlp即从根目录开始搜索
+"     let g:ctrlp_match_window_bottom=1
+"     let g:ctrlp_max_height=20
+"     let g:ctrlp_match_window_reversed=0
+"     let g:ctrlp_mruf_max=50000
+"     let g:ctrlp_follow_symlinks=1
+"     let g:ctrlp_regexp=1
+"     let g:ctrlp_max_files=0     "项目中文件较多时可以搜索到所有文件
+"     let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
                                  \ 'undo', 'line', 'changes', 'mixed', 'bookmarkdir']
 
-"ctrlp扩展，可以搜索当前文件的函数
-Bundle 'tacahiroy/ctrlp-funky'
-    let g:ctrlp_extensions = ['funky']
-    nnoremap <Leader>ss :CtrlPFunky<Cr>
+"ctrlp扩展，可以搜索当前文件的函数 {
+" Bundle 'tacahiroy/ctrlp-funky'
+"     let g:ctrlp_extensions = ['funky']
+"     nnoremap <Leader>ss :CtrlPFunky<Cr>
 "}
 
 " 显示增强 {
@@ -577,65 +577,28 @@ nmap <esc>w :cs find c <C-R>=expand("<cword>")<CR><CR>
 Bundle 'vim-scripts/gtags.vim'
 " }
 
-" GNU Global {
-"----查找函数、宏、枚举等定义的位置: alt+g
-nmap <M-g> :Gtags -a <C-R>=expand("<cword>")<CR><CR>
-nmap <esc>g :Gtags -a <C-R>=expand("<cword>")<CR><CR>
-"----查找符号表：alt+d: -i为不区分大小写；-a为显示绝对路径
-nmap <M-d> :Gtags -ia 
-nmap <esc>d :Gtags -ia 
-"-----查找grep：alt+w
-"nmap <M-w> :Gtags -sa <C-R>=expand("<cword>")<CR><CR>
-"nmap <esc>w :Gtags -sa <C-R>=expand("<cword>")<CR><CR>
-"nmap <M-w> :Gtags -ga
-"nmap <esc>w :Gtags -ga
+" LeaderF {
+Bundle 'Yggdroot/LeaderF'
+" nmap <silent> <Leader>f :Leaderf file<CR>
+let g:Lf_GtagsAutoGenerate = 1
+let g:Lf_ShortcutF = '<C-P>'
+nmap <Leader>p :Leaderf file<CR>
+nmap <Leader>f :Leaderf mru<CR>
+nmap <Leader>ss :Leaderf function<CR>
 "----查找调用本函数的函数:  alt+s
-nmap <M-s> :Gtags -rxa <C-R>=expand("<cword>")<CR><CR>
-nmap <esc>s :Gtags -rxa <C-R>=expand("<cword>")<CR><CR>
-"查找C语言符号，即查找函数名、宏、枚举值等出现的地方
-nmap <M-f> :Gtags -ga <C-R>=expand("<cword>")<CR><CR>
-nmap <esc>f :Gtags -ga <C-R>=expand("<cword>")<CR><CR>
-"nmap <M-f> :Grep -w <C-R>=expand("<cword>")<CR><CR>
-"nmap <esc>f :Grep -w <C-R>=expand("<cword>")<CR><CR>
+nmap <M-s> :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
+nmap <esc>s :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
+"----查找函数、宏、枚举等定义的位置: alt+g
+noremap <M-g> :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <esc>g :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
 
-"生成global、cscope数据库
-map <C-F12> :call Do_GenCsTag()<CR>
-map <F12> :call UpdateCscopeDb()<CR>
-"保存文件后自动更新GNU Global
-au BufWritePost *.cpp call UpdateTags(expand('<afile>'))
-au BufWritePost *.c call UpdateTags(expand('<afile>'))
-au BufWritePost *.h call UpdateTags(expand('<afile>'))
-au BufWritePost *py call UpdateTags(expand('<afile>'))
+"----查找符号表：alt+d: -i为不区分大小写；-a为显示绝对路径
+nmap <M-d> :Leaderf gtags -d  
+nmap <esc>d :Leaderf gtags -d 
 
-function! Do_GenCsTag()
-    let dir = getcwd()
-    if(executable('gtags'))
-        if(g:iswindows!=1)
-            silent! execute "!find . -name '*.h' -o -name '*.c' -o -name '*.cpp' -o -name '*.java' -o -name '*.cs' > gtags.files"
-            "生成cscope数据库时，find要用绝对路径，否则跳转时找不到文件
-            "silent! execute "!find . -name '*.h' -o -name '*.c' -o -name '*.cpp' -o -name '*.java' -o -name '*.cs' > cscope.files"
-        else
-            silent! execute "!gentags.bat"
-        endif
-        silent! execute "!gtags"
-        silent! execute "!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q ."
-        silent! execute "!cscope -bkq -i cscope.files"
-    endif
-endfunction
-
-function! UpdateCscopeDb()
-    silent! execute ":cs reset"
-endfunction
-
-function! UpdateTags(f)
-    let dir = fnamemodify(a:f, ':p:h')
-if(g:iswindows!=1) 
-    exe 'silent !cd ' . dir . ' && global -u &> /dev/null &'
-    silent! execute ":cs reset"
-else 
-    exe 'silent !cd ' . dir . ' && global -u' 
-endif 
-endfunction
+"----查找下一个、上一个
+noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
+noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
 " }
 
 " 标签导航 {
