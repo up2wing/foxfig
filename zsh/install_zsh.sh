@@ -11,7 +11,8 @@
 echo instll zsh...
 yum -y install zsh
 chsh -s /bin/zsh
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+# sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh install.sh
 
 echo install autojump...
 git clone https://github.com/joelthelion/autojump.git /tmp/autojump/
