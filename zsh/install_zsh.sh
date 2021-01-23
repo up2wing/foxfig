@@ -19,7 +19,12 @@ git clone https://github.com/joelthelion/autojump.git /tmp/autojump/
 cd /tmp/autojump
 ./install.py
 
-cp ~/.zshrc ~/.zshrc.bak
+mv ~/.zshrc ~/.zshrc.bak
 cp .zshrc ~/.zshrc
+
+echo install tmux...
+yum install tmux -y
+mv ~/.tmux.conf ~/.tmux.conf.bak
+cp .tmux.conf ~/.tmux.conf
 
 cd -
