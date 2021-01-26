@@ -12,6 +12,17 @@ Linux暂不能自动安装。
 `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle/`
 然后在vim中执行`:BundleInstall`。
 
+## neovim
+vim8.x 在使用 leaderf 时不稳定，neovim 稳定一些。
+在 neovim 页面下载 neovim nightly 版本的 nvim.appimage：[neovim](https://github.com/neovim/neovim/releases)，下载后建个软连接就能用了：
+ln -sf nvim.appimage /usr/bin/vim
+
+neovim 配置文件和 vim 兼容，所以可以直接用：
+ln -sf /root/.vimrc /root/.config/nvim/init.vim
+
+需要支持 python：
+pip3 install --user --upgrade neovim
+
 ## 插件的使用
 ### YouCompleteMe
     自动补全神器，需要手动安装。配置方法参考[vim 自动提示、自动补齐插件 YouCompleteMe for windows Gvim 安装及使用](http://blog.csdn.net/up2wing/article/details/20313213)。
