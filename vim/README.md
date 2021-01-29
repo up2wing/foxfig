@@ -13,17 +13,47 @@ Linux暂不能自动安装。
 然后在vim中执行`:BundleInstall`。
 
 ## neovim
-vim8.x 在使用 leaderf 时不稳定，neovim 稳定一些。
-在 neovim 页面下载 neovim nightly 版本的 nvim.appimage：[neovim](https://github.com/neovim/neovim/releases)，下载后建个软连接就能用了：
+vim8.x 在使用 leaderf 时不稳定，neovim 稳定一些。  
+在 neovim 页面下载 neovim nightly 版本的 nvim.appimage：[neovim](https://github.com/neovim/neovim/releases)，下载后建个软连接就能用了：  
+```bash
 ln -sf nvim.appimage /usr/bin/vim
+```
 
-neovim 配置文件和 vim 兼容，所以可以直接用：
+neovim 配置文件和 vim 兼容，所以可以直接用：  
+```bash
 ln -sf /root/.vimrc /root/.config/nvim/init.vim
+```
 
-需要支持 python：
+需要支持 python：  
+```bash
 pip3 install --user --upgrade neovim
+```
 
 ## 插件的使用
+
+### coc.nvim
+    使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用。  
+
+#### coc-clangd
+    在 vim 中执行:  
+    ```bash
+    :CocInstall coc-clangd
+    ```
+    在 [clangd](https://github.com/clangd/clangd/releases) 网站下载 clangd 并解压：  
+    ```bash
+    mv clangd_snapshot_20210124 clangd
+    mv clangd /usr/share
+    ln -sf /usr/share/clangd/bin/clangd /usr/bin/clangd
+    ```
+#### 生成 compile_commands.json
+    在 [fedora](https://koji.fedoraproject.org/koji/buildinfo?buildID=1610007) 上下载 bear 二进制并安装：  
+    ```bash
+    yum localinstall bear-2.4.4-1.fc32.x86_64.rpm -y
+    ```
+    生成 compile_commands.json 文件：  
+    ```bash
+    bear make -j4
+    ```
 ### YouCompleteMe
     自动补全神器，需要手动安装。配置方法参考[vim 自动提示、自动补齐插件 YouCompleteMe for windows Gvim 安装及使用](http://blog.csdn.net/up2wing/article/details/20313213)。
 ### GNU Global
