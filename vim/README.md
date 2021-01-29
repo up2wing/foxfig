@@ -32,57 +32,57 @@ pip3 install --user --upgrade neovim
 ## 插件的使用
 
 ### coc.nvim
-    使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用。  
+使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用。  
 
 #### coc-clangd
-    在 vim 中执行:  
-    ```bash
-    :CocInstall coc-clangd
-    ```
-    在 [clangd](https://github.com/clangd/clangd/releases) 网站下载 clangd 并解压：  
-    ```bash
-    mv clangd_snapshot_20210124 clangd
-    mv clangd /usr/share
-    ln -sf /usr/share/clangd/bin/clangd /usr/bin/clangd
-    ```
+在 vim 中执行:  
+```bash
+:CocInstall coc-clangd
+```
+在 [clangd](https://github.com/clangd/clangd/releases) 网站下载 clangd 并解压：  
+```bash
+mv clangd_snapshot_20210124 clangd
+mv clangd /usr/share
+ln -sf /usr/share/clangd/bin/clangd /usr/bin/clangd
+```
 #### 生成 compile_commands.json
-    在 [fedora](https://koji.fedoraproject.org/koji/buildinfo?buildID=1610007) 上下载 bear 二进制并安装：  
-    ```bash
-    yum localinstall bear-2.4.4-1.fc32.x86_64.rpm -y
-    ```
-    生成 compile_commands.json 文件：  
-    ```bash
-    bear make -j4
-    ```
+在 [fedora](https://koji.fedoraproject.org/koji/buildinfo?buildID=1610007) 上下载 bear 二进制并安装：  
+```bash
+yum localinstall bear-2.4.4-1.fc32.x86_64.rpm -y
+```
+生成 compile_commands.json 文件：  
+```bash
+bear make -j4
+```
 ### YouCompleteMe
-    自动补全神器，需要手动安装。配置方法参考[vim 自动提示、自动补齐插件 YouCompleteMe for windows Gvim 安装及使用](http://blog.csdn.net/up2wing/article/details/20313213)。
+自动补全神器，需要手动安装。配置方法参考[vim 自动提示、自动补齐插件 YouCompleteMe for windows Gvim 安装及使用](http://blog.csdn.net/up2wing/article/details/20313213)。
 ### GNU Global
-    跳转定义、查找引用，比cscope用起来快。需要手动安装。
-    从GNU官网http://www.gnu.org/software/global/download.html下载压缩包，然后将bin下的文件拷贝到gvim所在目录（以Windows为例）。
-    映射快捷键->->->->
-        Ctrl+F12即可生成tags,并自动添加数据库
-        F12自动更新数据库。保存文件以后也会自动更新。
-        Alt+g                   "转到函数定义
-        Alt+d                   "打开符号表，支持POSIX正则；按Tab自动补全；
-        Alt+s                   "查找引用
-        Alt+f                   "搜索字符串
-        Alt+w                   "用cscope查找符号引用。因为global显示不出具体函数
+跳转定义、查找引用，比cscope用起来快。需要手动安装。  
+从GNU官网http://www.gnu.org/software/global/download.html下载压缩包，然后将bin下的文件拷贝到gvim所在目录（以Windows为例）。
+映射快捷键:
+    Ctrl+F12即可生成tags,并自动添加数据库
+    F12自动更新数据库。保存文件以后也会自动更新。
+    Alt+g                   "转到函数定义
+    Alt+d                   "打开符号表，支持POSIX正则；按Tab自动补全；
+    Alt+s                   "查找引用
+    Alt+f                   "搜索字符串
+    Alt+w                   "用cscope查找符号引用。因为global显示不出具体函数
 ### QuickFix窗口
     ,sf     "快速打开QuickFix窗口
     f3/F4   "向前/前后切换
 ### rainbow_parentheses
-    高亮显示匹配大括号、小括号等。不知道为什么我的配置文件自动载入不生效，按F2手动生效:(
+高亮显示匹配大括号、小括号等。不知道为什么我的配置文件自动载入不生效，按F2手动生效:(
 ### tagbar
-    比TagList在面向对象语言时看起来更舒服些, 需要ctags支持。下载CTags到gvim.exe所在目录。
-    F9打开Tagbar窗口.
+比TagList在面向对象语言时看起来更舒服些, 需要ctags支持。下载CTags到gvim.exe所在目录。  
+F9打开Tagbar窗口.
 ### Easymotion
-    快速移动插件
+快速移动插件  
     ,s    向前跳转到某单词
     ,b    向后跳转到某单词
     ,,f    跳转到以某字母开头的单词
 
 ### NERD_commenter
-    自动注释工具
+自动注释工具  
     ,ca    在可选的注释方式之间切换，比如C/C++ 的块注释/* */和行注释//
     ,cc    注释当前行
     ,cs    以”性感”的方式注释
@@ -109,11 +109,12 @@ pip3 install --user --upgrade neovim
         i.......Open selected file in a split window上下分屏
         s.......Open selected file in a new vsplit左右分屏
 ### CtrlP
-    在项目根目录中建立一个.git目录，ctrlp每次搜索即从根目录开始查找
-    如要修改根目录标志，可以修改g:ctrlp_root_markers变量。绑定快捷键：
+在项目根目录中建立一个.git目录，ctrlp每次搜索即从根目录开始查找
+如要修改根目录标志，可以修改g:ctrlp_root_markers变量。绑定快捷键：
         ,p  迅速打开工程中的一个文件，祖先目录为带.svn .git目录所在目录。因此需要在工程根目录下建立一个.git目录，否则只搜索打开文件所在目录。
         ,f  从历史文件中模糊查找
-    ctrlp扩展ctrlp-funky
+
+ctrlp扩展ctrlp-funky  
         ,ff    模糊查找本文件内的函数
 
 ### FixWhiteSpace
