@@ -12,21 +12,16 @@ Linux暂不能自动安装。
 `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle/`
 然后在vim中执行`:BundleInstall`。
 
-## neovim
-vim8.x 在使用 leaderf 时不稳定，neovim 稳定一些。  
-在 neovim 页面下载 neovim nightly 版本的 nvim.appimage：[neovim](https://github.com/neovim/neovim/releases)，下载后建个软连接就能用了：  
+## vim 编译支持 python3
+首先查看 python3 config 位置：  
 ```bash
-ln -sf nvim.appimage /usr/bin/vim
+python3-config                                                                                                                                            130 ↵
+Usage: /usr/libexec/platform-python3.6m-x86_64-config --prefix|--exec-prefix|--includes|--libs|--cflags|--ldflags|--extension-suffix|--help|--abiflags|--configdir
 ```
-
-neovim 配置文件和 vim 兼容，所以可以直接用：  
+然后按照 `python3-config` 返回的路径 configure，不能照搬网上的：  
 ```bash
-ln -sf /root/.vimrc /root/.config/nvim/init.vim
-```
-
-需要支持 python：  
-```bash
-pip3 install --user --upgrade neovim
+./configure --with-features=huge -enable-multibyte --enable-python3interp=yes --enable-fail-if-missing --with-python3-config-dir=/usr/libexec/platform-python3.6m-x86_64-config
+make -j4 && make install
 ```
 
 ## 插件的使用
