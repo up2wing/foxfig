@@ -173,7 +173,7 @@
         source $VIMRUNTIME/delmenu.vim
         source $VIMRUNTIME/menu.vim
         "解决consle输出乱码
-        language messages zh_CN.utf-8
+        " language messages zh_CN.utf-8
     " }
 
     "Fast edit vimrc {
@@ -381,40 +381,40 @@ map <leader>b <Plug>(easymotion-b)
 Bundle 'vim-scripts/matchit.zip'
 " }
 
-" 自动补全 {
-"迄今位置用到的最好的自动VIM自动补全插件, Windows下使用有问题
- Bundle 'Valloric/YouCompleteMe'
-"youcompleteme  默认tab  s-tab 和自动补全冲突
-let g:ycm_key_list_select_completion=['<c-n>']
-let g:ycm_key_list_select_completion = ['<Down>']
-let g:ycm_key_list_previous_completion=['<c-p>']
-let g:ycm_key_list_previous_completion = ['<Up>']
+" " 自动补全 {
+" "迄今位置用到的最好的自动VIM自动补全插件, Windows下使用有问题
+"  Bundle 'Valloric/YouCompleteMe'
+" "youcompleteme  默认tab  s-tab 和自动补全冲突
+" let g:ycm_key_list_select_completion=['<c-n>']
+" let g:ycm_key_list_select_completion = ['<Down>']
+" let g:ycm_key_list_previous_completion=['<c-p>']
+" let g:ycm_key_list_previous_completion = ['<Up>']
 
-" YouCompleteMe 功能
-" 补全功能在注释中同样有效
-let g:ycm_complete_in_comments=1
-" 允许 vim 加载 .ycm_extra_conf.py 文件，不再提示
-let g:ycm_confirm_extra_conf=0
-" 开启 YCM 基于标签引擎
-let g:ycm_collect_identifiers_from_tags_files=1
-" 引入 C++ 标准库tags，这个没有也没关系，只要.ycm_extra_conf.py文件中指定了正确的标准库路径
-set tags+=/data/misc/software/misc./vim/stdcpp.tags
-" YCM 集成 OmniCppComplete 补全引擎，设置其快捷键
-inoremap <leader>; <C-x><C-o>
-" 补全内容不以分割子窗口形式出现，只显示补全列表
-set completeopt-=preview
-" 从第一个键入字符就开始罗列匹配项
-let g:ycm_min_num_of_chars_for_completion=1
-" 禁止缓存匹配项，每次都重新生成匹配项
-let g:ycm_cache_omnifunc=0
-" 语法关键字补全
-let g:ycm_seed_identifiers_with_syntax=1
-" 修改对C函数的补全快捷键，默认是CTRL + space，修改为ALT + ;
-let g:ycm_key_invoke_completion = '<M-;>'
-" 设置转到定义处的快捷键为ALT + G，这个功能非常赞
-nmap <M-g> :YcmCompleter GoToDefinitionElseDeclaration <C-R>=expand("<cword>")<CR><CR>
+" " YouCompleteMe 功能
+" " 补全功能在注释中同样有效
+" let g:ycm_complete_in_comments=1
+" " 允许 vim 加载 .ycm_extra_conf.py 文件，不再提示
+" let g:ycm_confirm_extra_conf=0
+" " 开启 YCM 基于标签引擎
+" let g:ycm_collect_identifiers_from_tags_files=1
+" " 引入 C++ 标准库tags，这个没有也没关系，只要.ycm_extra_conf.py文件中指定了正确的标准库路径
+" set tags+=/data/misc/software/misc./vim/stdcpp.tags
+" " YCM 集成 OmniCppComplete 补全引擎，设置其快捷键
+" inoremap <leader>; <C-x><C-o>
+" " 补全内容不以分割子窗口形式出现，只显示补全列表
+" set completeopt-=preview
+" " 从第一个键入字符就开始罗列匹配项
+" let g:ycm_min_num_of_chars_for_completion=1
+" " 禁止缓存匹配项，每次都重新生成匹配项
+" let g:ycm_cache_omnifunc=0
+" " 语法关键字补全
+" let g:ycm_seed_identifiers_with_syntax=1
+" " 修改对C函数的补全快捷键，默认是CTRL + space，修改为ALT + ;
+" let g:ycm_key_invoke_completion = '<M-;>'
+" " 设置转到定义处的快捷键为ALT + G，这个功能非常赞
+" nmap <M-g> :YcmCompleter GoToDefinitionElseDeclaration <C-R>=expand("<cword>")<CR><CR>
 
-"}
+" "}
 
 " 快速插入代码片段 {
 "Bundle 'vim-scripts/UltiSnips'
@@ -577,11 +577,37 @@ nmap <esc>w :cs find c <C-R>=expand("<cword>")<CR><CR>
 Bundle 'vim-scripts/gtags.vim'
 " }
 
+" gtags {
+Bundle 'neoclide/coc.nvim'
+" if hidden is not set, TextEdit might fail.
+set hidden
+" don't give |ins-completion-menu| messages.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" }
+
+
 " LeaderF {
 Bundle 'Yggdroot/LeaderF'
 " nmap <silent> <Leader>f :Leaderf file<CR>
 let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_ShortcutF = '<C-P>'
+let g:Lf_PreviewInPopup = 1
 nmap <Leader>p :Leaderf file<CR>
 nmap <Leader>f :Leaderf mru<CR>
 nmap <Leader>ss :Leaderf function<CR>
