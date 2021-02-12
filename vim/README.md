@@ -3,21 +3,16 @@
 
 fox-vim, using vundle to manage plugins
 
-## 安装插件
-### 自动安装
-Windows下设置HOME环境变量，指向vim的安装路径，例如：d:\Program Files\Vim，然后执行install.bat。
-### 手动安装
-Linux暂不能自动安装。
-使用了vundle管理插件，所以首先要安装[vundle](https://github.com/VundleVim/Vundle.vim):
-`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle/`
-然后在vim中执行`:BundleInstall`。
+## 安装
+执行 install.sh 即可自动安装并配置。
 
 ## vim 编译支持 python3
 首先查看 python3 config 位置：  
 ```bash
-python3-config                                                                                                                                            130 ↵
+python3-config
 Usage: /usr/libexec/platform-python3.6m-x86_64-config --prefix|--exec-prefix|--includes|--libs|--cflags|--ldflags|--extension-suffix|--help|--abiflags|--configdir
 ```
+
 然后按照 `python3-config` 返回的路径 configure，不能照搬网上的：  
 ```bash
 ./configure --with-features=huge -enable-multibyte --enable-python3interp=yes --enable-fail-if-missing --with-python3-config-dir=/usr/libexec/platform-python3.6m-x86_64-config
@@ -29,29 +24,24 @@ make -j4 && make install
 ### LeaderF
 LeaderF 可以查找工程中的所有符号、文件，查找符号用的是 gtags，可认为是对 GNU Global 的封装，它自己管理 GTAGS 等文件，不用我们管了。  
 在工程中查找文件非常迅速，并且查找非常智能，自动匹配 grep，即使记不住文件或符号的全名也没关系，阅读代码神器。  
-准备工作：  
+为解析 python、rust, 需要进行一些准备工作：  
 ```bash
 pip3 install pygments
 yum install python3-pygments -y
-下载并安装 [universal-ctags](https://github.com/universal-ctags/ctags.git) 和 [gtags](http://www.gnu.org/software/global/download.html)。
 ```
-以上几步主要是为解析 python、rust 的。
 
-手动为 LeaderF 生成 gtags 文件：  
+然后下载并安装 [universal-ctags](https://github.com/universal-ctags/ctags.git) 和 [gtags](http://www.gnu.org/software/global/download.html)。
+
+一般这样就 ok 了，但通常在打开一个新的工程时，会手动为 LeaderF 生成 gtags 文件：  
 ```bash
 :Leaderf gtags --update
 ```
 
 ### coc.nvim
-使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用。  
+使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用、定义跳转等。  
 
 #### coc.nvim 支持 c/c++
 coc-clangd 提供对 c/c++ 的支持。  
-在 vim 中执行:  
-```bash
-:CocInstall coc-clangd
-```
-
 在 [clangd](https://github.com/clangd/clangd/releases) 网站下载 clangd 并解压：  
 ```bash
 mv clangd_snapshot_20210124 clangd
@@ -59,13 +49,18 @@ mv clangd /usr/share
 ln -sf /usr/share/clangd/bin/clangd /usr/bin/clangd
 ```
 
+在 vim 中执行:  
+```bash
+:CocInstall coc-clangd
+```
+
 #### 生成 compile_commands.json
+compile_commands.json 文件为 LSP 提供数据库文件。  
+
+对于使用 Makefile 的工程，要借助 bear 工具：  
 在 [fedora](https://koji.fedoraproject.org/koji/buildinfo?buildID=1610007) 上下载 bear 二进制并安装：  
 ```bash
 yum localinstall bear-2.4.4-1.fc32.x86_64.rpm -y
-```
-生成 compile_commands.json 文件：  
-```bash
 bear make -j4
 ```
 
@@ -89,7 +84,7 @@ pip3 install jedi
 ```
 
 #### coc.nvim 支持 rust
-首先安装 rust-analyzer：
+首先安装 rust-analyzer：  
 到 [rust-analyzer 官网](https://github.com/rust-analyzer/rust-analyzer/releases) 下载 rust-analyzer-x86_64-unknown-linux-gnu.gz 并解压：
 ```bash
 gzip -d rust-analyzer-x86_64-unknown-linux-gnu.gz
