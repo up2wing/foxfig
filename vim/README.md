@@ -33,8 +33,8 @@ LeaderF 可以查找工程中的所有符号、文件，查找符号用的是 gt
 ```bash
 pip3 install pygments
 yum install python3-pygments -y
-```
 下载并安装 [universal-ctags](https://github.com/universal-ctags/ctags.git) 和 [gtags](http://www.gnu.org/software/global/download.html)。
+```
 以上几步主要是为解析 python、rust 的。
 
 手动为 LeaderF 生成 gtags 文件：  
@@ -45,17 +45,20 @@ yum install python3-pygments -y
 ### coc.nvim
 使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用。  
 
-#### coc-clangd
+#### coc.nvim 支持 c/c++
+coc-clangd 提供对 c/c++ 的支持。  
 在 vim 中执行:  
 ```bash
 :CocInstall coc-clangd
 ```
+
 在 [clangd](https://github.com/clangd/clangd/releases) 网站下载 clangd 并解压：  
 ```bash
 mv clangd_snapshot_20210124 clangd
 mv clangd /usr/share
 ln -sf /usr/share/clangd/bin/clangd /usr/bin/clangd
 ```
+
 #### 生成 compile_commands.json
 在 [fedora](https://koji.fedoraproject.org/koji/buildinfo?buildID=1610007) 上下载 bear 二进制并安装：  
 ```bash
@@ -65,6 +68,40 @@ yum localinstall bear-2.4.4-1.fc32.x86_64.rpm -y
 ```bash
 bear make -j4
 ```
+
+对于 ninja 构建的工程：  
+```bash
+ninja -t compdb cc cxx > compile_commands.json
+```
+其中 compdb 后面的要根据 `ninja -t rules` 来设置。
+
+#### coc.nvim 支持 python
+coc-pyright 提供对 python 的支持。  
+首先安装依赖的 python 插件：  
+```bash
+pip3 install pylint
+pip3 install jedi
+```
+
+在 vim 中执行：
+```bash
+:CocInstall coc-pyright
+```
+
+#### coc.nvim 支持 rust
+首先安装 rust-analyzer：
+到 [rust-analyzer 官网](https://github.com/rust-analyzer/rust-analyzer/releases) 下载 rust-analyzer-x86_64-unknown-linux-gnu.gz 并解压：
+```bash
+gzip -d rust-analyzer-x86_64-unknown-linux-gnu.gz
+chmod +x rust-analyzer-x86_64-unknown-linux-gnu
+ln -sf rust-analyzer-x86_64-unknown-linux-gnu /usr/bin/rust-analyzer
+```
+
+在 vim 中执行：
+```bash
+:CocInstall coc-rust-analyzer
+```
+
 ### ~~YouCompleteMe~~
 ~~自动补全神器，需要手动安装。配置方法参考[vim 自动提示、自动补齐插件 YouCompleteMe for windows Gvim 安装及使用](http://blog.csdn.net/up2wing/article/details/20313213)。~~  
 YouCompleteMe 已经用 coc.nvim 代替。
@@ -73,13 +110,13 @@ YouCompleteMe 已经用 coc.nvim 代替。
 ~~跳转定义、查找引用，比cscope用起来快。需要手动安装。~~
 ~~从GNU官网http://www.gnu.org/software/global/download.html下载压缩包，然后将bin下的文件拷贝到gvim所在目录（以Windows为例）。~~
 ~~映射快捷键:~~
-~~    Ctrl+F12即可生成tags,并自动添加数据库~~
-~~    F12自动更新数据库。保存文件以后也会自动更新。~~
-~~    Alt+g                   "转到函数定义~~
-~~    Alt+d                   "打开符号表，支持POSIX正则；按Tab自动补全；~~
-~~    Alt+s                   "查找引用~~
-~~    Alt+f                   "搜索字符串~~
-~~    Alt+w                   "用cscope查找符号引用。因为global显示不出具体函数~~  
+   ~~Ctrl+F12即可生成tags,并自动添加数据库~~
+   ~~F12自动更新数据库。保存文件以后也会自动更新。~~
+   ~~Alt+g                   "转到函数定义~~
+   ~~Alt+d                   "打开符号表，支持POSIX正则；按Tab自动补全；~~
+   ~~Alt+s                   "查找引用~~
+   ~~Alt+f                   "搜索字符串~~
+   ~~Alt+w                   "用cscope查找符号引用。因为global显示不出具体函数~~  
 GNU Global 用 LeaderF 代替。
 
 ### QuickFix窗口
