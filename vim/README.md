@@ -26,6 +26,22 @@ make -j4 && make install
 
 ## 插件的使用
 
+### LeaderF
+LeaderF 可以查找工程中的所有符号、文件，查找符号用的是 gtags，可认为是对 GNU Global 的封装，它自己管理 GTAGS 等文件，不用我们管了。  
+在工程中查找文件非常迅速，并且查找非常智能，自动匹配 grep，即使记不住文件或符号的全名也没关系，阅读代码神器。  
+准备工作：  
+```bash
+pip3 install pygments
+yum install python3-pygments -y
+```
+下载并安装 [universal-ctags](https://github.com/universal-ctags/ctags.git) 和 [gtags](http://www.gnu.org/software/global/download.html)。
+以上几步主要是为解析 python、rust 的。
+
+手动为 LeaderF 生成 gtags 文件：  
+```bash
+:Leaderf gtags --update
+```
+
 ### coc.nvim
 使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用。  
 
@@ -49,27 +65,34 @@ yum localinstall bear-2.4.4-1.fc32.x86_64.rpm -y
 ```bash
 bear make -j4
 ```
-### YouCompleteMe
-自动补全神器，需要手动安装。配置方法参考[vim 自动提示、自动补齐插件 YouCompleteMe for windows Gvim 安装及使用](http://blog.csdn.net/up2wing/article/details/20313213)。
-### GNU Global
-跳转定义、查找引用，比cscope用起来快。需要手动安装。  
-从GNU官网http://www.gnu.org/software/global/download.html下载压缩包，然后将bin下的文件拷贝到gvim所在目录（以Windows为例）。
-映射快捷键:
-    Ctrl+F12即可生成tags,并自动添加数据库
-    F12自动更新数据库。保存文件以后也会自动更新。
-    Alt+g                   "转到函数定义
-    Alt+d                   "打开符号表，支持POSIX正则；按Tab自动补全；
-    Alt+s                   "查找引用
-    Alt+f                   "搜索字符串
-    Alt+w                   "用cscope查找符号引用。因为global显示不出具体函数
+### ~~YouCompleteMe~~
+~~自动补全神器，需要手动安装。配置方法参考[vim 自动提示、自动补齐插件 YouCompleteMe for windows Gvim 安装及使用](http://blog.csdn.net/up2wing/article/details/20313213)。~~  
+YouCompleteMe 已经用 coc.nvim 代替。
+
+### ~~GNU Global~~
+~~跳转定义、查找引用，比cscope用起来快。需要手动安装。~~
+~~从GNU官网http://www.gnu.org/software/global/download.html下载压缩包，然后将bin下的文件拷贝到gvim所在目录（以Windows为例）。~~
+~~映射快捷键:~~
+~~    Ctrl+F12即可生成tags,并自动添加数据库~~
+~~    F12自动更新数据库。保存文件以后也会自动更新。~~
+~~    Alt+g                   "转到函数定义~~
+~~    Alt+d                   "打开符号表，支持POSIX正则；按Tab自动补全；~~
+~~    Alt+s                   "查找引用~~
+~~    Alt+f                   "搜索字符串~~
+~~    Alt+w                   "用cscope查找符号引用。因为global显示不出具体函数~~  
+GNU Global 用 LeaderF 代替。
+
 ### QuickFix窗口
     ,sf     "快速打开QuickFix窗口
     f3/F4   "向前/前后切换
+
 ### rainbow_parentheses
 高亮显示匹配大括号、小括号等。不知道为什么我的配置文件自动载入不生效，按F2手动生效:(
+
 ### tagbar
 比TagList在面向对象语言时看起来更舒服些, 需要ctags支持。下载CTags到gvim.exe所在目录。  
 F9打开Tagbar窗口.
+
 ### Easymotion
 快速移动插件  
     ,s    向前跳转到某单词
