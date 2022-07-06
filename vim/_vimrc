@@ -417,6 +417,9 @@ nmap <silent> gi <Plug>(coc-definition)
 " nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gy <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+nmap <M-l> :CocList symbols<CR>
+nmap <esc>l :CocList symbols<CR>
 " }
 
 
@@ -424,9 +427,12 @@ nmap <silent> gr <Plug>(coc-references)
 Bundle 'Yggdroot/LeaderF'
 " nmap <silent> <Leader>f :Leaderf file<CR>
 let g:Lf_Gtagsconf = '/usr/share/gtags/gtags.conf'
+let g:Lf_CacheDirectory = '/data/leaderf'
 let g:Lf_Gtagslabel = 'native-pygments'
 let g:Lf_UseVersionControlTool = 0
 let g:Lf_GtagsAutoGenerate = 1
+" let g:Lf_UseCache = 0
+let g:Lf_MaxCount = 0
 " let g:Lf_ShortcutF = '<C-P>'
 let g:Lf_PreviewInPopup = 1
 nmap <Leader>p :Leaderf file<CR>
@@ -436,8 +442,8 @@ nmap <Leader>ss :Leaderf function<CR>
 nmap <M-s> :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 nmap <esc>s :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 "----查找函数、宏、枚举等定义的位置: alt+g
-noremap <M-g> :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
-noremap <esc>g :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <M-f> :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <esc>f :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
 
 "----列出所有符号：alt+d
 nmap <M-d> :Leaderf gtags<CR>
