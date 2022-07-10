@@ -40,6 +40,20 @@ yum install python3-pygments -y
 ### coc.nvim
 使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用、定义跳转等。  
 
+安装需要yarn，开始会报错：
+```bash
+[coc.nvim] build/index.js not found, please install dependencies and compile coc.nvim by: yarn install
+Press ENTER or type command to continue
+```
+安装：
+```bash
+ cd /root/.vim/bundle/coc.nvim/
+ yum install nodejs -y
+ npm install -g yarn
+ yarn install
+ yarn build
+```
+
 #### coc.nvim 支持 c/c++
 coc-clangd 提供对 c/c++ 的支持。  
 在 [clangd](https://github.com/clangd/clangd/releases) 网站下载 clangd 并解压：  
