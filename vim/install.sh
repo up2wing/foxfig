@@ -8,9 +8,9 @@
 #*
 #================================================================*/
 echo "update vim automatically, wait a moment..."
-vimConfigPath="/root/.vim"
-bundlePath="/root/.vim/bundle"
-vimConfig="/root/.vim/vimrc"
+vimConfigPath="~/.vim"
+bundlePath="~/.vim/bundle"
+vimConfig="~/.vimrc"
 
 if [ ! -d "$bundlePath" ]; then
     echo "clone vundle and install..."
@@ -18,10 +18,11 @@ if [ ! -d "$bundlePath" ]; then
 fi
 
 if [ -f "$vimConfig" ]; then
-    cp $vimConfig $vimConfigPath/vimrc.bak
+    cp $vimConfig $vimConfigPath/.vimrc.bak
 fi
 
-cp _vimrc $vimConfigPath/vimrc
+cp _vimrc ~/.vimrc
+cp coc-settings.json ~/.vim/coc-settings.json
 
 vim +BundleInstall! +BundleClean +qall
 
