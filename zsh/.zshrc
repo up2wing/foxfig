@@ -111,3 +111,7 @@ ga() {
     pid=`ps aux |grep $1 |grep -v grep|awk '{print $2}'`
     gdb attach $pid
 }
+
+foxgrep() {
+    grep "$1" -r -I $2 -n --binary-files=without-match --color=auto
+}
