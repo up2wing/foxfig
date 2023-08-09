@@ -280,15 +280,17 @@ Bundle 'Lokaltog/vim-powerline'
 "let g:Powerline_symbols = 'fancy'
 "let g:Powerline_symbols = 'unicode'
 
-Bundle 'vim-scripts/Mark--Karkat' 
-nmap <M-e> <leader>m
-nmap <esc>e <leader>m
+Bundle 'vim-scripts/Mark--Karkat'
+nmap <M-j> <leader>m
+nmap <esc>j <leader>m
 
 "代码排版缩进标识
 Bundle 'Yggdroot/indentLine'
 let g:indentLine_noConcealCursor = 1
 let g:indentLine_color_term = 0
 let g:indentLine_char = '|'
+let g:indentLine_setConceal = 0
+let g:vim_json_syntax_conceal = 0
 
 "for show no user whitespaces
 Bundle 'bronson/vim-trailing-whitespace'
