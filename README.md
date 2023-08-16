@@ -22,8 +22,8 @@
 ### 7. Chrome
     一直在用的[浏览器](http://dl.timerim.com/google-chrome-x64.htm)
 
-### gnome-calculator
-    计算器。Mac计算器太难用了。可以用 [macport 安装](https://ports.macports.org/port/gnome-calculator/)。
+### 8. gnome-calculator
+    计算器。Mac计算器太难用了。可以用 [macport安装](https://ports.macports.org/port/gnome-calculator/)。
 
 ## Chrome 插件
 ### 1. Pocket
