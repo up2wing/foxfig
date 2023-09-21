@@ -37,6 +37,11 @@ yum install python3-pygments -y
 :Leaderf gtags --update
 ```
 
+如果 Leaderf 生成失败，可以手动执行 gtags，然后将 GPATH GRTAGS GTAGS 拷贝到 Leaderf 数据目录。
+```bash
+gtags --gtagslabel=pygments -v
+```
+
 ### coc.nvim
 使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用、定义跳转等。  
 
