@@ -1,4 +1,7 @@
 {
     "list.maxPreviewHeight": 30,
     "rust-analyzer.serverPath": "/usr/bin/rust-analyzer",
+	"inlayHint.enableParameter": false,
+	"inlayHint.display": false,
+	"semanticTokens.enable": false
 }
