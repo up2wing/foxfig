@@ -42,6 +42,11 @@ yum install python3-pygments -y
 gtags --gtagslabel=pygments -v
 ```
 
+在大工程比如 kernel 中时，LeaderF 在 gtags 查找符号可能会有些慢，可以安装 C 扩展：
+```bash
+:LeaderfInstallCExtension
+```
+
 ### coc.nvim
 使用 coc.nvim 代替 YouCompleteMe 来补全和查找引用、定义跳转等。  
 
