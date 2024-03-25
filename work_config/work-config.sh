@@ -13,6 +13,11 @@ git config --global alias.co checkout
 git config --global alias.ci commit
 git config --global alias.br branch
 git config --global alias.df diff
+
+# skip status and dirty check to avoid zsh slow
+git config --global --add oh-my-zsh.hide-status 1
+git config --global --add oh-my-zsh.hide-dirty 1
+
 echo "save token..."
 git config --global credential.helper cache
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
