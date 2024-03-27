@@ -108,7 +108,7 @@
         set shiftwidth=4   "自动缩进的宽度
         set softtabstop=4       " 按退格键时可以一次删掉 4 个空格
         set smarttab            " insert tabs on the start of a line according to shiftwidth, not tabstop 按退格键时可以一次删掉 4 个空格
-        set expandtab      "用空格代替tab
+        " set expandtab      "用空格代替tab
 
         set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
         set smartindent          "Smart indent
@@ -217,20 +217,20 @@
 " }
 
 " 颜色主题 {
-    Bundle 'altercation/vim-colors-solarized'
-    Bundle 'vim-scripts/Lucius'
-    "Bundle 'tomasr/molokai'
-    set t_Co=256
-    set background=dark
-    if !has('gui_running')
-        let g:solarized_termcolors=&t_Co
-        let g:solarized_termtrans=1
-    endif
-    colorscheme solarized     "darkburn     "设置颜色主题
-    let g:solarized_termtrans=1
-    let g:solarized_contrast="normal"
-    let g:solarized_visibility="normal"
-    :nnoremap <F5> "=strftime("%F")<CR>gP"
+     "Bundle 'altercation/vim-colors-solarized'
+	 Bundle 'lifepillar/vim-solarized8'
+     Bundle 'vim-scripts/Lucius'
+     "Bundle 'tomasr/molokai'
+     set t_Co=256
+     set background=dark
+
+	 if has("termguicolors")
+		 " enable true color
+		 set termguicolors
+	 endif
+
+     colorscheme solarized8
+     :nnoremap <F5> "=strftime("%F")<CR>gP"
 
     " c++ syntax highlight
 "    Bundle 'octol/vim-cpp-enhanced-highlight'
@@ -340,8 +340,8 @@ nmap <F3> :cp<cr>
 
 " 具体语言语法高亮 {
 " for python.vim syntax highlight
-Bundle 'hdima/python-syntax'
-let python_highlight_all = 1
+" Bundle 'hdima/python-syntax'
+" let python_highlight_all = 1
 
 
 " session manager {
@@ -454,6 +454,11 @@ nmap <esc>d :Leaderf gtags<CR>
 "----查找下一个、上一个
 noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
 noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
+" }
+
+" for rust {
+Plugin 'rust-lang/rust.vim'
+let g:rust_fold = 1
 " }
 
 " 标签导航 {
