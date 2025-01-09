@@ -29,8 +29,8 @@
 ### 1. Pocket
     一键保存到 [Pocket](http://chromecj.com/productivity/2015-11/618.html)。
 
-### 2. 眼睛护航
-    [保护好眼睛](http://chromecj.com/accessibility/2014-11/292.html)，可以将背景修改为舒服的配色。
+### 2. Dark Reader
+    [保护好眼睛](https://darkreader.org/)，可以将背景修改为舒服的配色。
 
 ### 3. 印象笔记
     将网页[剪藏](https://www.yinxiang.com/webclipper/?downloaded)到印象笔记。
@@ -44,5 +44,5 @@
 ### 6. hosts
     [河蟹](https://laod.cn/hosts/2017-google-hosts.html#button_file)。
 
-### 7. Markdown here
-    可以[在印象笔记中Markdown书写笔记](https://www.gugeapps.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa)。
+### 7. cVim
+    可以[在 chrome 中使用 vim](https://github.com/1995eaton/chromium-vim)，商店中已下架，需手动安装。
