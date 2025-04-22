@@ -489,6 +489,11 @@ let g:tagbar_left = 1
 let g:tagbar_sort = 0
 " }
 
+" markdown 高亮 {
+Bundle 'godlygeek/tabular'
+Bundle 'preservim/vim-markdown'
+" }
+
 " Alternate 头文件切换 {
 Bundle 'vim-scripts/a.vim'
 " }
