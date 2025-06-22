@@ -1,6 +1,6 @@
 {
 	"list.maxPreviewHeight": 30,
-	"rust-analyzer.serverPath": "/usr/bin/rust-analyzer",
+	"rust-analyzer.assist.imports.enable": false,
 	"inlayHint.enableParameter": false,
 	"inlayHint.display": false,
 	"clangd.arguments": [
