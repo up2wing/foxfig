@@ -478,6 +478,7 @@ let g:rust_fold = 1
 " }
 
 " tag view {
+Bundle 'majutsushi/tagbar'
 Bundle 'liuchengxu/vista.vim'
 nmap <F9> :Vista<CR>
 let g:vista_sidebar_position = 'vertical topleft'
