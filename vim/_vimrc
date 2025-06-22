@@ -230,7 +230,6 @@
 	 endif
 
      colorscheme solarized8
-     :nnoremap <F5> "=strftime("%F")<CR>gP"
 
     " c++ syntax highlight
 "    Bundle 'octol/vim-cpp-enhanced-highlight'
@@ -326,10 +325,6 @@ Bundle 'Raimondi/delimitMate'
 au FileType python let b:delimitMate_nesting_quotes = ['"']
 " }
 
-"for Markdown preview {
-Plugin 'iamcco/markdown-preview.vim'
-let g:mkdp_path_to_chrome = "C:/Program\ Files\ (x86)/Google/Chrome/Application/chrome.exe"
-" }
 
 "QuickFix Toggle {
 Bundle 'vim-scripts/QFixToggle'
@@ -453,7 +448,8 @@ let g:Lf_CacheDirectory = '/data/leaderf'
 let g:Lf_Gtagslabel = 'native-pygments'
 let g:Lf_UseVersionControlTool = 0
 let g:Lf_GtagsAutoGenerate = 1
-let g:Lf_UseCache = 1
+let g:Lf_UseCache = 0
+let g:Lf_UseMemoryCache = 0
 let g:Lf_MaxCount = 0
 " let g:Lf_ShortcutF = '<C-P>'
 let g:Lf_PreviewInPopup = 1
@@ -481,18 +477,14 @@ Plugin 'rust-lang/rust.vim'
 let g:rust_fold = 1
 " }
 
-" 标签导航 {
-Bundle 'majutsushi/tagbar'
-nmap <F9> :TagbarToggle<CR>
-let g:tagbar_autofocus = 1
-let g:tagbar_left = 1
-let g:tagbar_sort = 0
-" }
+" tag view {
+Bundle 'liuchengxu/vista.vim'
+nmap <F9> :Vista<CR>
+let g:vista_sidebar_position = 'vertical topleft'
+"}
 
-" markdown 高亮 {
 Bundle 'godlygeek/tabular'
 Bundle 'preservim/vim-markdown'
-" }
 
 " Alternate 头文件切换 {
 Bundle 'vim-scripts/a.vim'
