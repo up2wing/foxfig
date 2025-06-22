@@ -106,6 +106,7 @@ alias tmux="tmux -2"
 alias tnew="tmux -2 new -s"
 alias tatt="tmux -2 attach -t"
 DISABLE_AUTO_UPDATE=true
+export TERM=xterm-256color
 
 ga() {
     echo $1
