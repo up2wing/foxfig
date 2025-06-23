@@ -9,13 +9,14 @@ fox-vim, using vundle to manage plugins
 ## vim 编译支持 python3
 首先查看 python3 config 位置：  
 ```bash
-python3-config
-Usage: /usr/libexec/platform-python3.6m-x86_64-config --prefix|--exec-prefix|--includes|--libs|--cflags|--ldflags|--extension-suffix|--help|--abiflags|--configdir
+python3-config --configdir
+/usr/local/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/config-3.13-darwin
 ```
 
 然后按照 `python3-config` 返回的路径 configure，不能照搬网上的：  
 ```bash
-./configure --with-features=huge -enable-multibyte --enable-python3interp=yes --enable-fail-if-missing --with-python3-config-dir=/usr/libexec/platform-python3.6m-x86_64-config
+./configure --with-features=huge -enable-multibyte --enable-python3interp=yes --enable-fail-if-missing --with-python3-config-dir=/usr/local/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13/config-3.13-darwin
+
 make -j4 && make install
 ```
 
