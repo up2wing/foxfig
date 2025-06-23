@@ -477,12 +477,13 @@ Plugin 'rust-lang/rust.vim'
 let g:rust_fold = 1
 " }
 
-" tag view {
+" 标签导航 {
 Bundle 'majutsushi/tagbar'
-Bundle 'liuchengxu/vista.vim'
-nmap <F9> :Vista<CR>
-let g:vista_sidebar_position = 'vertical topleft'
-"}
+nmap <F9> :TagbarToggle<CR>Add commentMore actions
+let g:tagbar_autofocus = 1
+let g:tagbar_left = 1
+let g:tagbar_sort = 0
+" }
 
 Bundle 'godlygeek/tabular'
 Bundle 'preservim/vim-markdown'
