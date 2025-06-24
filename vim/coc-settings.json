@@ -3,6 +3,7 @@
 	"rust-analyzer.assist.imports.enable": false,
 	"inlayHint.enableParameter": false,
 	"inlayHint.display": false,
+	"rust-analyzer.cfg.setTest": false,
 	"clangd.arguments": [
 		"-header-insertion=never",
 		"--inlay-hints=true"
