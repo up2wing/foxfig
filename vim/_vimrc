@@ -194,6 +194,7 @@
             autocmd! bufwritepost _vimrc source ~/_vimrc
         endif
     " }
+	set backspace=indent,eol,start
 " }
 
 " Vundle {
