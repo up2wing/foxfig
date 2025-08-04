@@ -480,7 +480,7 @@ let g:rust_fold = 1
 
 " 标签导航 {
 Bundle 'majutsushi/tagbar'
-nmap <F9> :TagbarToggle<CR>Add commentMore actions
+nmap <F9> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_left = 1
 let g:tagbar_sort = 0
