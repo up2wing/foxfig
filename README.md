@@ -18,6 +18,22 @@
 
 ### 6. gnome-calculator
     计算器。替换 mac 默认计算器，[macport安装](https://ports.macports.org/port/gnome-calculator)
+    
+    ```
+    gnome-calculator
+
+** (gnome-calculator:74144): CRITICAL **: 09:45:42.500: history_view_set_serializer: assertion 'self != NULL' failed
+No provider of glGenSamplers found.  Requires one of:
+    Desktop OpenGL 3.3
+    GL_ARB_sampler_objects
+    OpenGL ES 3.0
+[2]    74144 abort      gnome-calculator
+    ```
+    
+    原因为试图使用硬件加速，但 x11 环境不支持。
+    ```
+    GSK_RENDERER=cairo gnome-calculator
+    ```
 
 ## Chrome 插件
 ### 1. Pocket
