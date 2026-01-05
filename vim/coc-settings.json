@@ -1,10 +1,14 @@
 {
 	"list.maxPreviewHeight": 30,
 	"rust-analyzer.assist.imports.enable": false,
+	"rust-analyzer.completion.autoimport.enable": false,
+	"rust-analyzer.serverPath": "~/.cargo/bin/rust-analyzer",
 	"inlayHint.enableParameter": false,
 	"inlayHint.display": false,
 	"rust-analyzer.cfg.setTest": false,
 	"clangd.arguments": [
+		"--background-index",
+		"-j=4",
 		"-header-insertion=never",
 		"--inlay-hints=true"
 	]
