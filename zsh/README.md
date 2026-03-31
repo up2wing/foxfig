@@ -2,14 +2,21 @@
 ================================================================================
 
 ## 安装
-### 1. 安装zsh
+### 安装zsh
 `yum install zsh`
 
 `chsh -s /bin/zsh`
-### 2. 安装oh-my-zsh
+### 安装oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-### 3. 安装autojump
+### 安装 TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+### 安装 fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all
+sudo ln -sf ~/.fzf/bin/fzf /usr/local/bin/fzf   # 让 tmux run-shell 能找到
+
+### 安装autojump
 `git clone https://github.com/joelthelion/autojump.git`
 
 进入到clone下的目录
